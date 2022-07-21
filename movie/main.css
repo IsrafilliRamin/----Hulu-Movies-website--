@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+* .container {
+  background-color: #06202a;
+  transition: 0.5s ease-in-out all;
+}
+* .container.active2 {
+  background-color: #0b4962;
+  transition: 0.5s ease-in-out all;
+}
+* .container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+  height: 10vw;
+}
+* .container header .input input {
+  width: 0;
+  height: 0;
+  outline: none;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  padding: 0 1vw;
+  background-color: transparent;
+  transition: 1s ease-in-out all;
+}
+* .container header .input input.active {
+  width: 30vw;
+  height: 3vw;
+  border: 1px solid #145f7c;
+  border-radius: 0.5vw;
+}
+* .container header .input input::-moz-placeholder {
+  color: aqua;
+}
+* .container header .input input:-ms-input-placeholder {
+  color: aqua;
+}
+* .container header .input input::placeholder {
+  color: aqua;
+}
+* .container header .h1 {
+  width: 20vw;
+  height: 10vw;
+  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 5vw;
+  font-family: Rubik Moonrocks;
+}
+* .container header .h1:hover {
+  color: yellow;
+  cursor: pointer;
+}
+* .container header .icons {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  color: white;
+}
+* .container header .icons i {
+  transition: 0.5s ease-in-out all;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+* .container header .icons i:hover {
+  color: aqua;
+  transform: rotate(360deg);
+}
+* .container header .logo {
+  display: flex;
+  align-items: center;
+}
+* .container header .logo .night {
+  color: azure;
+  height: 1.7vw;
+  width: 3.5vw;
+  border-radius: 5vw;
+  border: 0.3vw solid aqua;
+  position: relative;
+  transition: 3s ease-in-out all;
+}
+* .container header .logo .night.active4 {
+  right: 0;
+  transition: 3s ease-in-out all;
+  background-color: #ffffff;
+}
+* .container header .logo .night .sp {
+  background-color: #ffffff;
+  padding: 0.55vw 0.5vw;
+  border-radius: 5vw;
+  position: absolute;
+  transition: 3s ease-in-out all;
+}
+* .container header .logo .night .sp.active3 {
+  right: 0;
+  background-color: #06202a;
+}
+* .container header .logo .night .sp:hover {
+  cursor: pointer;
+}
+* .container main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+  padding: 2vw 5vw;
+}
+* .container main.active2 {
+  background-color: aqua;
+}
+* .container main .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 20%;
+  max-width: 20%;
+  gap: 1vw;
+  color: white;
+  width: 20vw;
+  height: 35vw;
+  position: relative;
+}
+* .container main .box video {
+  display: none;
+  position: absolute;
+  width: 18vw;
+  height: 34vw;
+  margin-bottom: 5vw;
+}
+* .container main .box img {
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+* .container main p {
+  color: #efefef;
+}
+* .container main h1 {
+  font-size: 1.5vw;
+  list-style: none;
+  color: #f8f8f8;
+}
+@media (max-width: 1024px) {
+  * .container main .box {
+    flex: 80%;
+    max-width: 80%;
+    height: 100vh;
+    text-align: center;
+  }
+  * .container main video {
+    display: none !important;
+  }
+  * .container main h1 {
+    font-size: 2vw;
+  }
+  * .container main p {
+    font-size: 1.5vw;
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 823px) {
+  * .container main * .container .cat p {
+    font-size: 5vw;
+    cursor: pointer;
+  }
+  * .container main .video {
+    display: none !important;
+  }
+  * .container main .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 40%;
+    max-width: 70%;
+    height: 100vw;
+    text-align: center;
+    margin-bottom: 12vw;
+  }
+  * .container main .box video {
+    display: none;
+    position: absolute;
+    width: 20vw;
+    height: 130vh;
+    z-index: 10;
+  }
+  * .container main .cat {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  * .container main h1 {
+    width: 50%;
+  }
+  * .container main .video {
+    display: none !important;
+  }
+  * .container main .box {
+    display: flex;
+    flex-direction: row;
+    flex: 60%;
+    max-width: 50%;
+    margin-left: 18vw;
+    height: 70vw;
+    text-align: center;
+    margin-bottom: 12vw;
+  }
+  * .container main .box video {
+    display: none;
+    position: absolute;
+    width: 20vw;
+    height: 130vh;
+    z-index: 10;
+  }
+  * .container main .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+* .container .icon {
+  display: none;
+  color: aqua;
+  font-size: 4vw;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 1vw;
+}
+* .container .icon.active6 {
+  display: block;
+}
+* .container .icon:hover {
+  cursor: pointer;
+}
+* .container .cat {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2vw;
+  color: white;
+}
+* .container .cat p {
+  font-size: 1.3vw;
+  cursor: pointer;
+  transition: 0.5s ease-in-out all;
+}
+* .container .cat p:hover {
+  transform: scale(1.3);
+  color: #145f7c;
+}
+* .container .cat p.active8 {
+  color: #145f7c;
+}
+* .container .cat p.active9 {
+  color: aqua;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000101;
+  padding: 3vw;
+}
+footer a {
+  color: #ffffff;
+  font-size: 2vw;
+}
+footer a:hover {
+  cursor: pointer;
+  color: #0b4962;
+}/*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+@media only screen and (max-width:375px) {
+
+  * .container header .icons i {
+    transition: 0.5s ease-in-out all;
+    font-size: 2vw;
+    cursor: pointer;
+}
+* .container header .icons i {
+  transition: 0.5s ease-in-out all;
+  font-size: 2vw;
+  cursor: pointer;
+  margin-bottom: -2vw;
+}
+* .container .cat {
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  color: white;
+}
+}

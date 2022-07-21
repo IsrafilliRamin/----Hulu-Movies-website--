@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ramin Israfilli">
+    <meta name="description" content="movie website">
+    <meta name="keywords" content="movie, comedy, dram, horror, avengers">
+    <title>Login and Sign up</title>
+    <link rel="stylesheet" href="./login.css" />
+
+  </head>
+  <body>
+    <!-- container header start -->
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="./logo.png" alt="hulu" />
+        </div>
+        <div class="sign">
+          <button>Sign Up</button>
+        </div>
+      </header>
+      <!-- container header end -->
+      <!-- main start -->
+      <main>
+        <div class="inpContainer">
+          <h1 class="title" accesskey="Log In">Log In</h1>
+          <form action="">
+            <div class="name">
+              <h3>Name</h3>
+              <input type="text" class="name" placeholder="Name" required />
+              <p class="error">Name or password is incorrect</p>
+            </div>
+            <div class="password">
+              <h3>Password</h3>
+              <input
+                type="password"
+                class="password"
+                placeholder="Password"
+                required
+              />
+              <p class="error">Name or password is incorrect</p>
+            </div>
+            <div class="email active">
+              <h3>Email</h3>
+              <input type="email" class="emails" placeholder="Email" required />
+            </div>
+            <a href="#">Forgot your email or password</a>
+            <a href="" class="log-btn">Login</a>
+
+            <!-- <h3 class="success">success</h3> -->
+          </form>
+        </div>
+      </main>
+      <!-- main end -->
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>

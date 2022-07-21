@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    .container{
+        background-image: url("http://image.tmdb.org/t/p/original//xicKILMzPn6XZYCOpWwaxlUzg6S.jpg");
+        height: 100vh;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+        padding: 0 4vw;
+        color: white;
+        .obacity{
+            text-align: center;
+            display: flex;
+            background-color: rgba(0,0,0,0.4);
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+        }
+        .play{
+            position: absolute;
+            top:20vw;
+            left: 15.5vw;
+            font-size: 5vw;
+            z-index: 100;
+            opacity: 0.9;
+            color: rgb(21, 112, 124);
+            a{
+                &:hover{
+                    cursor: pointer;
+                    color: greenyellow;
+                }
+            }
+            
+        }
+        .imageContainer{
+            z-index: 1;
+            margin-left: 10vw;
+            margin-top: 10vw;
+            img{
+                width: 40vh;
+                height: 60vh;
+                border-radius: 1vw;
+            }
+            
+        }
+        
+        .textContainer{
+            z-index: 1;
+           margin-top: 10vw;
+           width: 50%;
+           margin-left: 2vw;
+        }
+        .close{
+            right: 0;
+            top: 0;
+            position: absolute;
+            color: white;
+            font-size: 2vw;
+            padding: 0.7vw;
+            margin: 0.5vw;
+            
+            border-radius: 5vw;
+            &:hover{
+                color:lightcoral;
+            }
+        }
+    } 
+}
+
+.videoContainer{
+    position: absolute;
+    top: 50vw;
+    left: 10vw;
+}
+
+
+//Responsive
+
+$desktop-width: 1024px;
+
+        @media(max-width: #{$desktop-width}) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                .play{
+                    position:absolute ;
+                    left: 47vw;
+                    top: 32vw;
+                }
+                .imageContainer{
+                    z-index: 1;
+                    img{
+                    width: 35vh;
+                    height: 45vh;
+                    border-radius: 1vw;
+                
+                }
+            }
+        }  
+    }
+        .textContainer .imdb{
+            width: 4vw;
+            height: 4vw;
+            border: 0.3vw solid #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5vw;
+            font-weight: bold;
+            margin:2vw 0;
+            margin-left: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+//Responsive
+
+$tablet-width: 768px;
+@media only screen and (max-width:#{$tablet-width}) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .play{
+            position:absolute ;
+            left: 46vw;
+            top: 44vw;
+            font-size: 8vw;
+        }
+    }
+}
+$phone-width: 420px;
+@media only screen and (max-width:#{$phone-width}) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 5vw;
+        .close{
+            font-size: 3vw;
+        }
+        .play{
+            position:absolute ;
+            left: 46vw;
+            top:80vw;
+            font-size: 8vw;
+        }
+    }
+}
