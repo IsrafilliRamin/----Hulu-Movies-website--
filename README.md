@@ -1,2 +1,2 @@
 # ----Hulu-Movies-website--
-HTML,SASS/SCSS,JS,JQUERY,API(AJAX).
+HTML,SASS/SCSS,JS,JQUERY,API(fetch).
