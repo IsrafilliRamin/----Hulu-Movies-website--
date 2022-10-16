@@ -100,7 +100,7 @@ allInput.forEach((input) => {
         );
         if (yoxla) {
           btn.setAttribute("href", "./movie/movie.html");
-          location.href = "http://localhost:5500/movie/movie.html";
+          location.href = "./movie/movie.html";
           allInput.forEach((inp) => {
             inp.style.border = "2px solid green";
           });
